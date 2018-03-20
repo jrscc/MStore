@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="412.0" style="-fx-background-color: #43CD80;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="412.0" style="-fx-background-color: #43CD80;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controlador">
    <children>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
-          <Button mnemonicParsing="false" style="-fx-background-color: #FFBBFF;" text="&lt;&lt;Voltar" />
+          <Button fx:id="voltar" mnemonicParsing="false" onAction="#onClickVoltar" style="-fx-background-color: #FFBBFF;" text="&lt;&lt;Voltar" />
             <TextField prefHeight="26.0" prefWidth="168.0" promptText="CPF do cliente" />
             <Label text="TOTAL: 0,00" textFill="#f00a0a">
                <font>

@@ -21,6 +21,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class Controlador {
+	
+	@FXML private javafx.scene.control.Button voltar;
     
 	@FXML
     private TextField cod;
@@ -81,6 +83,13 @@ public class Controlador {
     	} catch (Exception e) {
     	    e.printStackTrace();
     	}
+    }
+    @FXML
+    void onClickVoltar(ActionEvent event){
+    	
+    	Stage stage = (Stage) voltar.getScene().getWindow(); //Obtendo a janela atual
+        stage.close(); //Fechando o Stage
+    	
     }
     
 }

@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class SceneBuiderJanelaBuscarCliente extends Application{
@@ -17,6 +18,7 @@ public class SceneBuiderJanelaBuscarCliente extends Application{
 		Parent root = FXMLLoader.load(getClass().getResource("TelaBuscarCliente.fxml"));
 		Scene scene = new Scene(root);
 		primaryStage.setTitle("MStore");
+		primaryStage.initModality(Modality.APPLICATION_MODAL);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

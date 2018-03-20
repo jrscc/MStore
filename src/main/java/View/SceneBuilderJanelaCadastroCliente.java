@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 		Scene scene = new Scene(root);
 		primaryStage.setTitle("MStore");
 		//modal trava a janela anterior
-//		primaryStage.initModality(Modality.APPLICATION_MODAL);
+		primaryStage.initModality(Modality.APPLICATION_MODAL);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFBBFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFBBFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controlador">
    <children>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
-          <Button mnemonicParsing="false" style="-fx-background-color: #43CD80;" text="&lt;&lt;Voltar" />
+          <Button fx:id="voltar" mnemonicParsing="false" onAction="#onClickVoltar" style="-fx-background-color: #43CD80;" text="&lt;&lt;Voltar" />
         </items>
       </ToolBar>
       <Label prefHeight="51.0" prefWidth="264.0" text="Cadastro do Cliente">
