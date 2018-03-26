@@ -16,19 +16,20 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class Controlador {
 	
-	@FXML private javafx.scene.control.Button voltar;
-    
 	@FXML
     private TextField cod;
 
     @FXML
     private Button buscar;
+    
+    @FXML private javafx.scene.control.Button voltar; //variavel que acessa o botão voltar
 
     @FXML
     void onClickPagamento(ActionEvent event){
@@ -91,5 +92,4 @@ public class Controlador {
         stage.close(); //Fechando o Stage
     	
     }
-    
 }
